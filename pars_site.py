@@ -1,10 +1,11 @@
+#!usr/bin/python3
+
 import requests
 from bs4 import BeautifulSoup
 import os
 
 
 def get_html():
-    # import pdb;pdb.set_trace()
     url = 'https://bank.gov.ua/ua/markets/exchangerates?date=20.11.2020&period=daily'
     r = requests.get(url)
     return r.text
